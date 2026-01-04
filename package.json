@@ -4,6 +4,14 @@
   "description": "Design tokens - colors, typography, spacing, radius, shadow, motion",
   "type": "module",
   "license": "MIT",
+  "author": {
+    "name": "Matthew Van Dusen",
+    "url": "https://github.com/matthewvandusen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okja-engineering/chi-tokens"
+  },
   "publishConfig": {
     "access": "public"
   },
