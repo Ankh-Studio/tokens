@@ -21,5 +21,12 @@
   },
   "files": [
     "src"
-  ]
+  ],
+  "scripts": {
+    "check": "prettier --check 'src/**/*.json'",
+    "fix": "prettier --write 'src/**/*.json'"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.0"
+  }
 }
