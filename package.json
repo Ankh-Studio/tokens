@@ -1,6 +1,6 @@
 {
   "name": "@okja/chi-tokens",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Design tokens - colors, typography, spacing, radius, shadow, motion",
   "type": "module",
   "license": "MIT",
