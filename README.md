@@ -69,7 +69,22 @@ Tokens are on `:root` and wrapped in `@layer tokens`.
 | `--shadow-4` | High |
 | `--shadow-5` | Highest |
 
-### Motion
+### Motion (M3 Expressive)
+
+#### Spring Tokens (for JS animation libraries)
+
+| Token | Damping | Stiffness | Use Case |
+|-------|---------|-----------|----------|
+| `--spring-fast-spatial-*` | 0.9 | 1400 | Small components (buttons, switches) |
+| `--spring-default-spatial-*` | 0.9 | 700 | Partial screen (sheets, drawers) |
+| `--spring-slow-spatial-*` | 0.9 | 300 | Full screen transitions |
+| `--spring-fast-effects-*` | 1.0 | 3800 | Small component color/opacity |
+| `--spring-default-effects-*` | 1.0 | 1600 | Partial screen effects |
+| `--spring-slow-effects-*` | 1.0 | 800 | Full screen effects |
+
+**Spatial** springs allow overshoot (position, scale). **Effects** springs don't (color, opacity).
+
+#### Duration Tokens (for CSS)
 
 | Token | Value |
 |-------|-------|
@@ -77,8 +92,18 @@ Tokens are on `:root` and wrapped in `@layer tokens`.
 | `--duration-short1` to `short4` | 50-200ms |
 | `--duration-medium1` to `medium4` | 250-400ms |
 | `--duration-long1` to `long4` | 450-600ms |
-| `--easing-standard` | Standard easing |
-| `--easing-emphasized` | Emphasized easing |
+| `--duration-extra-long1` to `extra-long4` | 700-1000ms |
+
+#### Easing Tokens (for CSS)
+
+| Token | Value | Use Case |
+|-------|-------|----------|
+| `--easing-standard` | cubic-bezier(0.2, 0, 0, 1) | Utility animations |
+| `--easing-standard-accelerate` | cubic-bezier(0.3, 0, 1, 1) | Exiting screen |
+| `--easing-standard-decelerate` | cubic-bezier(0, 0, 0, 1) | Entering screen |
+| `--easing-emphasized` | cubic-bezier(0.2, 0, 0, 1) | Expressive M3 animations |
+| `--easing-emphasized-accelerate` | cubic-bezier(0.3, 0, 0.8, 0.15) | Expressive exit |
+| `--easing-emphasized-decelerate` | cubic-bezier(0.05, 0.7, 0.1, 1) | Expressive enter |
 
 ### Colors
 
