@@ -1,11 +1,35 @@
 /**
- * Chi Design System - Motion Tokens
- * Animation duration and easing tokens
+ * Chi Design System - Motion Tokens (M3 Expressive)
+ * Spring physics for JS libraries, easing/duration for CSS
  */
 
 @layer tokens {
   :root {
-    /* Durations */
+    /* ==============================================
+     * Spring Tokens (for JS animation libraries)
+     * Use with Framer Motion, React Spring, etc.
+     * ============================================== */
+
+    /* Spatial springs - position, scale, rotation (allows overshoot) */
+    --spring-fast-spatial-damping: 0.9;
+    --spring-fast-spatial-stiffness: 1400;
+    --spring-default-spatial-damping: 0.9;
+    --spring-default-spatial-stiffness: 700;
+    --spring-slow-spatial-damping: 0.9;
+    --spring-slow-spatial-stiffness: 300;
+
+    /* Effects springs - color, opacity (no overshoot) */
+    --spring-fast-effects-damping: 1;
+    --spring-fast-effects-stiffness: 3800;
+    --spring-default-effects-damping: 1;
+    --spring-default-effects-stiffness: 1600;
+    --spring-slow-effects-damping: 1;
+    --spring-slow-effects-stiffness: 800;
+
+    /* ==============================================
+     * Duration Tokens (for CSS transitions)
+     * ============================================== */
+
     --duration-instant: 0ms;
     --duration-short1: 50ms;
     --duration-short2: 100ms;
@@ -24,11 +48,18 @@
     --duration-extra-long3: 900ms;
     --duration-extra-long4: 1000ms;
 
-    /* Easing functions */
+    /* ==============================================
+     * Easing Tokens (for CSS transitions)
+     * ============================================== */
+
     --easing-linear: linear;
+
+    /* Standard - utility/functional animations */
     --easing-standard: cubic-bezier(0.2, 0, 0, 1);
     --easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
     --easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+
+    /* Emphasized - expressive M3 animations */
     --easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
     --easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
     --easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);

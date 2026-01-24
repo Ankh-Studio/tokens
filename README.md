@@ -42,9 +42,25 @@ Tokens are on `:root` and wrapped in `@layer tokens`.
 | `--font-sans` | system-ui, -apple-system, 'Segoe UI', sans-serif |
 | `--font-serif` | georgia, 'Times New Roman', serif |
 | `--font-mono` | 'SF Mono', monaco, 'Courier New', monospace |
-| `--font-size-1` to `--font-size-9` | 12px to 60px |
+| `--font-size-1` to `--font-size-11` | 11px to 57px (M3 aligned) |
 | `--font-weight-light/regular/medium/bold` | 300/400/500/700 |
-| `--line-height-1` to `--line-height-9` | 16px to 60px |
+| `--line-height-1` to `--line-height-11` | 16px to 64px |
+
+#### Font Size Scale (M3 Expressive)
+
+| Token | Value | M3 Role |
+|-------|-------|---------|
+| `--font-size-1` | 11px | label-small |
+| `--font-size-2` | 12px | body-small, label-medium |
+| `--font-size-3` | 14px | body-medium, label-large, title-small |
+| `--font-size-4` | 16px | body-large, title-medium |
+| `--font-size-5` | 22px | title-large |
+| `--font-size-6` | 24px | headline-small |
+| `--font-size-7` | 28px | headline-medium |
+| `--font-size-8` | 32px | headline-large |
+| `--font-size-9` | 36px | display-small |
+| `--font-size-10` | 45px | display-medium |
+| `--font-size-11` | 57px | display-large |
 
 ### Radius
 
@@ -69,7 +85,22 @@ Tokens are on `:root` and wrapped in `@layer tokens`.
 | `--shadow-4` | High |
 | `--shadow-5` | Highest |
 
-### Motion
+### Motion (M3 Expressive)
+
+#### Spring Tokens (for JS animation libraries)
+
+| Token | Damping | Stiffness | Use Case |
+|-------|---------|-----------|----------|
+| `--spring-fast-spatial-*` | 0.9 | 1400 | Small components (buttons, switches) |
+| `--spring-default-spatial-*` | 0.9 | 700 | Partial screen (sheets, drawers) |
+| `--spring-slow-spatial-*` | 0.9 | 300 | Full screen transitions |
+| `--spring-fast-effects-*` | 1.0 | 3800 | Small component color/opacity |
+| `--spring-default-effects-*` | 1.0 | 1600 | Partial screen effects |
+| `--spring-slow-effects-*` | 1.0 | 800 | Full screen effects |
+
+**Spatial** springs allow overshoot (position, scale). **Effects** springs don't (color, opacity).
+
+#### Duration Tokens (for CSS)
 
 | Token | Value |
 |-------|-------|
@@ -77,8 +108,18 @@ Tokens are on `:root` and wrapped in `@layer tokens`.
 | `--duration-short1` to `short4` | 50-200ms |
 | `--duration-medium1` to `medium4` | 250-400ms |
 | `--duration-long1` to `long4` | 450-600ms |
-| `--easing-standard` | Standard easing |
-| `--easing-emphasized` | Emphasized easing |
+| `--duration-extra-long1` to `extra-long4` | 700-1000ms |
+
+#### Easing Tokens (for CSS)
+
+| Token | Value | Use Case |
+|-------|-------|----------|
+| `--easing-standard` | cubic-bezier(0.2, 0, 0, 1) | Utility animations |
+| `--easing-standard-accelerate` | cubic-bezier(0.3, 0, 1, 1) | Exiting screen |
+| `--easing-standard-decelerate` | cubic-bezier(0, 0, 0, 1) | Entering screen |
+| `--easing-emphasized` | cubic-bezier(0.2, 0, 0, 1) | Expressive M3 animations |
+| `--easing-emphasized-accelerate` | cubic-bezier(0.3, 0, 0.8, 0.15) | Expressive exit |
+| `--easing-emphasized-decelerate` | cubic-bezier(0.05, 0.7, 0.1, 1) | Expressive enter |
 
 ### Colors
 
@@ -109,6 +150,53 @@ Colors use `light-dark()` for automatic dark mode:
 - **`light-dark()` function** - Automatic dark mode colors
 - **OKLCH color space** - Perceptual uniformity
 - **Scaling support** - `var(--scaling, 1)` multiplier
+
+## Runtime Customization
+
+Use data attributes to adjust tokens at runtime.
+
+### Scaling
+
+Set `data-scaling` on any element to scale spacing, typography, and radius tokens:
+
+```html
+<html data-scaling="110">
+```
+
+| Value | Multiplier |
+|-------|------------|
+| `90` | 0.9 |
+| `95` | 0.95 |
+| `100` | 1 (default) |
+| `105` | 1.05 |
+| `110` | 1.1 |
+
+### Radius
+
+Set `data-radius` on any element to adjust border radius tokens:
+
+```html
+<html data-radius="large">
+```
+
+| Value | Factor |
+|-------|--------|
+| `none` | 0 (sharp corners) |
+| `small` | 0.75 |
+| `medium` | 1 (default) |
+| `large` | 1.5 |
+
+### Scoped Customization
+
+Attributes can be applied to any element to scope changes:
+
+```html
+<body data-scaling="100">
+  <aside data-scaling="90">
+    <!-- Compact sidebar -->
+  </aside>
+</body>
+```
 
 ## License
 

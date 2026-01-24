@@ -7,61 +7,61 @@
   :root {
     color-scheme: light dark;
 
-    /* Primary */
-    --color-primary: light-dark(oklch(49.4% 0.163 264deg), oklch(79.7% 0.105 264deg));
-    --color-on-primary: light-dark(oklch(100% 0 0deg), oklch(30% 0.163 264deg));
-    --color-primary-container: light-dark(oklch(79.7% 0.105 264deg), oklch(35% 0.163 264deg));
-    --color-on-primary-container: light-dark(oklch(20% 0.163 264deg), oklch(90% 0.105 264deg));
+    /* Primary - Dark gray */
+    --color-primary: light-dark(oklch(35% 0 0deg), oklch(80% 0 0deg));
+    --color-on-primary: light-dark(oklch(100% 0 0deg), oklch(20% 0 0deg));
+    --color-primary-container: light-dark(oklch(85% 0 0deg), oklch(30% 0 0deg));
+    --color-on-primary-container: light-dark(oklch(20% 0 0deg), oklch(90% 0 0deg));
 
-    /* Secondary */
-    --color-secondary: light-dark(oklch(61.8% 0.15 314deg), oklch(75.1% 0.08 314deg));
-    --color-on-secondary: light-dark(oklch(100% 0 0deg), oklch(35.1% 0.15 314deg));
-    --color-secondary-container: light-dark(oklch(85.1% 0.08 314deg), oklch(40.1% 0.15 314deg));
-    --color-on-secondary-container: light-dark(oklch(25.1% 0.15 314deg), oklch(90.1% 0.08 314deg));
+    /* Secondary - Medium gray */
+    --color-secondary: light-dark(oklch(50% 0 0deg), oklch(70% 0 0deg));
+    --color-on-secondary: light-dark(oklch(100% 0 0deg), oklch(20% 0 0deg));
+    --color-secondary-container: light-dark(oklch(88% 0 0deg), oklch(35% 0 0deg));
+    --color-on-secondary-container: light-dark(oklch(20% 0 0deg), oklch(90% 0 0deg));
 
-    /* Tertiary */
-    --color-tertiary: light-dark(oklch(70.4% 0.15 29deg), oklch(80.2% 0.08 29deg));
-    --color-on-tertiary: light-dark(oklch(100% 0 0deg), oklch(40.2% 0.15 29deg));
-    --color-tertiary-container: light-dark(oklch(90.2% 0.08 29deg), oklch(45.2% 0.15 29deg));
-    --color-on-tertiary-container: light-dark(oklch(30.2% 0.15 29deg), oklch(95.2% 0.08 29deg));
+    /* Tertiary - Light gray */
+    --color-tertiary: light-dark(oklch(60% 0 0deg), oklch(75% 0 0deg));
+    --color-on-tertiary: light-dark(oklch(100% 0 0deg), oklch(25% 0 0deg));
+    --color-tertiary-container: light-dark(oklch(90% 0 0deg), oklch(40% 0 0deg));
+    --color-on-tertiary-container: light-dark(oklch(25% 0 0deg), oklch(92% 0 0deg));
 
-    /* Error */
-    --color-error: light-dark(oklch(62.8% 0.258 29deg), oklch(80.2% 0.15 29deg));
-    --color-on-error: light-dark(oklch(100% 0 0deg), oklch(40.2% 0.258 29deg));
-    --color-error-container: light-dark(oklch(90.2% 0.08 29deg), oklch(45.2% 0.258 29deg));
-    --color-on-error-container: light-dark(oklch(30.2% 0.15 29deg), oklch(95.2% 0.15 29deg));
+    /* Error - Keep chromatic for visibility */
+    --color-error: light-dark(oklch(55% 0.2 25deg), oklch(70% 0.18 25deg));
+    --color-on-error: light-dark(oklch(100% 0 0deg), oklch(20% 0.05 25deg));
+    --color-error-container: light-dark(oklch(92% 0.04 25deg), oklch(30% 0.15 25deg));
+    --color-on-error-container: light-dark(oklch(25% 0.1 25deg), oklch(95% 0.04 25deg));
 
     /* Surface */
-    --color-surface: light-dark(oklch(99.1% 0.005 264deg), oklch(15% 0.005 264deg));
-    --color-on-surface: light-dark(oklch(20% 0.005 264deg), oklch(90% 0.005 264deg));
-    --color-surface-variant: light-dark(oklch(92.5% 0.02 264deg), oklch(25% 0.02 264deg));
-    --color-on-surface-variant: light-dark(oklch(30% 0.02 264deg), oklch(75% 0.02 264deg));
-    --color-surface-container: light-dark(oklch(96.1% 0.01 264deg), oklch(20% 0.01 264deg));
-    --color-surface-container-low: light-dark(oklch(98.1% 0.005 264deg), oklch(17% 0.005 264deg));
-    --color-surface-container-high: light-dark(oklch(94.1% 0.01 264deg), oklch(25% 0.01 264deg));
-    --color-surface-container-highest: light-dark(oklch(92.1% 0.01 264deg), oklch(30% 0.01 264deg));
+    --color-surface: light-dark(oklch(99% 0 0deg), oklch(15% 0 0deg));
+    --color-on-surface: light-dark(oklch(20% 0 0deg), oklch(90% 0 0deg));
+    --color-surface-variant: light-dark(oklch(92% 0 0deg), oklch(25% 0 0deg));
+    --color-on-surface-variant: light-dark(oklch(30% 0 0deg), oklch(80% 0 0deg));
+    --color-surface-container: light-dark(oklch(96% 0 0deg), oklch(20% 0 0deg));
+    --color-surface-container-low: light-dark(oklch(98% 0 0deg), oklch(17% 0 0deg));
+    --color-surface-container-high: light-dark(oklch(94% 0 0deg), oklch(25% 0 0deg));
+    --color-surface-container-highest: light-dark(oklch(92% 0 0deg), oklch(30% 0 0deg));
 
     /* Surface elevations */
     --color-surface-0: var(--color-surface);
-    --color-surface-1: light-dark(oklch(97.1% 0.01 264deg), oklch(18% 0.01 264deg));
-    --color-surface-2: light-dark(oklch(94.1% 0.01 264deg), oklch(21% 0.01 264deg));
-    --color-surface-3: light-dark(oklch(92.1% 0.01 264deg), oklch(24% 0.01 264deg));
-    --color-surface-4: light-dark(oklch(91.1% 0.01 264deg), oklch(26% 0.01 264deg));
-    --color-surface-5: light-dark(oklch(90.1% 0.01 264deg), oklch(28% 0.01 264deg));
+    --color-surface-1: light-dark(oklch(97% 0 0deg), oklch(18% 0 0deg));
+    --color-surface-2: light-dark(oklch(95% 0 0deg), oklch(21% 0 0deg));
+    --color-surface-3: light-dark(oklch(93% 0 0deg), oklch(24% 0 0deg));
+    --color-surface-4: light-dark(oklch(91% 0 0deg), oklch(27% 0 0deg));
+    --color-surface-5: light-dark(oklch(89% 0 0deg), oklch(30% 0 0deg));
 
     /* Background */
     --color-background: var(--color-surface);
     --color-on-background: var(--color-on-surface);
 
     /* Outline */
-    --color-outline: light-dark(oklch(50% 0.02 264deg), oklch(60% 0.02 264deg));
-    --color-outline-variant: light-dark(oklch(80% 0.02 264deg), oklch(35% 0.02 264deg));
+    --color-outline: light-dark(oklch(50% 0 0deg), oklch(60% 0 0deg));
+    --color-outline-variant: light-dark(oklch(80% 0 0deg), oklch(35% 0 0deg));
     --color-divider: var(--color-outline-variant);
 
     /* Inverse */
-    --color-inverse-surface: light-dark(oklch(25% 0.01 264deg), oklch(90% 0.005 264deg));
-    --color-inverse-on-surface: light-dark(oklch(95% 0.005 264deg), oklch(25% 0.01 264deg));
-    --color-inverse-primary: light-dark(oklch(79.7% 0.105 264deg), oklch(49.4% 0.163 264deg));
+    --color-inverse-surface: light-dark(oklch(25% 0 0deg), oklch(90% 0 0deg));
+    --color-inverse-on-surface: light-dark(oklch(95% 0 0deg), oklch(25% 0 0deg));
+    --color-inverse-primary: light-dark(oklch(80% 0 0deg), oklch(35% 0 0deg));
 
     /* Scrim and shadow */
     --color-scrim: oklch(0% 0 0deg);

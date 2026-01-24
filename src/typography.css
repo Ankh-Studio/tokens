@@ -10,16 +10,18 @@
     --font-serif: georgia, 'Times New Roman', serif;
     --font-mono: 'SF Mono', monaco, 'Courier New', monospace;
 
-    /* Font sizes */
-    --font-size-1: calc(12px * var(--scaling, 1));
-    --font-size-2: calc(14px * var(--scaling, 1));
-    --font-size-3: calc(16px * var(--scaling, 1));
-    --font-size-4: calc(18px * var(--scaling, 1));
-    --font-size-5: calc(20px * var(--scaling, 1));
+    /* Font sizes (M3 Expressive aligned) */
+    --font-size-1: calc(11px * var(--scaling, 1));
+    --font-size-2: calc(12px * var(--scaling, 1));
+    --font-size-3: calc(14px * var(--scaling, 1));
+    --font-size-4: calc(16px * var(--scaling, 1));
+    --font-size-5: calc(22px * var(--scaling, 1));
     --font-size-6: calc(24px * var(--scaling, 1));
     --font-size-7: calc(28px * var(--scaling, 1));
-    --font-size-8: calc(35px * var(--scaling, 1));
-    --font-size-9: calc(60px * var(--scaling, 1));
+    --font-size-8: calc(32px * var(--scaling, 1));
+    --font-size-9: calc(36px * var(--scaling, 1));
+    --font-size-10: calc(45px * var(--scaling, 1));
+    --font-size-11: calc(57px * var(--scaling, 1));
 
     /* Font weights */
     --font-weight-light: 300;
@@ -27,16 +29,18 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 
-    /* Line heights */
+    /* Line heights (M3 Expressive aligned) */
     --line-height-1: calc(16px * var(--scaling, 1));
-    --line-height-2: calc(20px * var(--scaling, 1));
-    --line-height-3: calc(24px * var(--scaling, 1));
-    --line-height-4: calc(26px * var(--scaling, 1));
+    --line-height-2: calc(16px * var(--scaling, 1));
+    --line-height-3: calc(20px * var(--scaling, 1));
+    --line-height-4: calc(24px * var(--scaling, 1));
     --line-height-5: calc(28px * var(--scaling, 1));
-    --line-height-6: calc(30px * var(--scaling, 1));
+    --line-height-6: calc(32px * var(--scaling, 1));
     --line-height-7: calc(36px * var(--scaling, 1));
     --line-height-8: calc(40px * var(--scaling, 1));
-    --line-height-9: calc(60px * var(--scaling, 1));
+    --line-height-9: calc(44px * var(--scaling, 1));
+    --line-height-10: calc(52px * var(--scaling, 1));
+    --line-height-11: calc(64px * var(--scaling, 1));
 
     /* Letter spacing */
     --letter-spacing-1: 0.0025em;
