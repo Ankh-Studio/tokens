@@ -17,7 +17,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "provenance": false
+    "provenance": true
   },
   "exports": {
     "./tokens.css": "./dist/tokens.css",
