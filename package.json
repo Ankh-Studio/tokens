@@ -6,11 +6,11 @@
   "license": "MIT",
   "author": {
     "name": "Matthew Van Dusen",
-    "url": "https://github.com/matthewvandusen"
+    "url": "https://github.com/imagineux"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankh-studio/tokens.git"
+    "url": "git+https://github.com/Ankh-Studio/tokens.git"
   },
   "engines": {
     "node": ">=20"
