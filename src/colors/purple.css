@@ -31,6 +31,22 @@
     --color-error-container: light-dark(oklch(92% 0.05 29deg), oklch(66.4% 0.195 29deg));
     --color-on-error-container: light-dark(oklch(20% 0.05 29deg), oklch(92% 0.05 29deg));
 
+    /* Fixed colors (mode-independent) */
+    --color-primary-fixed: oklch(88% 0.10 285deg);
+    --color-primary-fixed-dim: oklch(75% 0.16 285deg);
+    --color-on-primary-fixed: oklch(15% 0.18 285deg);
+    --color-on-primary-fixed-variant: oklch(35% 0.18 285deg);
+
+    --color-secondary-fixed: oklch(88% 0.029 270deg);
+    --color-secondary-fixed-dim: oklch(68% 0.029 270deg);
+    --color-on-secondary-fixed: oklch(12% 0.029 270deg);
+    --color-on-secondary-fixed-variant: oklch(30% 0.029 270deg);
+
+    --color-tertiary-fixed: oklch(88% 0.08 320deg);
+    --color-tertiary-fixed-dim: oklch(72% 0.08 320deg);
+    --color-on-tertiary-fixed: oklch(18% 0.12 320deg);
+    --color-on-tertiary-fixed-variant: oklch(35% 0.12 320deg);
+
     /* Surface */
     --color-surface: light-dark(oklch(99% 0.005 300deg), oklch(7% 0.005 300deg));
     --color-on-surface: light-dark(oklch(12.5% 0.005 300deg), oklch(91.5% 0.005 300deg));
@@ -40,6 +56,10 @@
     --color-surface-container-low: light-dark(oklch(97.5% 0.005 300deg), oklch(12.5% 0.005 300deg));
     --color-surface-container-high: light-dark(oklch(93.5% 0.01 300deg), oklch(19% 0.005 300deg));
     --color-surface-container-highest: light-dark(oklch(91.5% 0.01 300deg), oklch(24% 0.005 300deg));
+    --color-surface-container-lowest: light-dark(oklch(100% 0 0deg), oklch(5% 0.005 300deg));
+    --color-surface-bright: light-dark(oklch(99% 0.005 300deg), oklch(28% 0.005 300deg));
+    --color-surface-dim: light-dark(oklch(90% 0.005 300deg), oklch(7% 0.005 300deg));
+    --color-surface-tint: light-dark(oklch(50% 0.18 285deg), oklch(72% 0.16 285deg));
 
     /* Surface elevations */
     --color-surface-0: light-dark(oklch(100% 0 0deg), oklch(7% 0.005 300deg));

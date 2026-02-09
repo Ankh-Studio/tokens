@@ -1,0 +1,26 @@
+/**
+ * Ankh Studio - Breakpoint Tokens
+ * Built-in breakpoints for adaptive layouts.
+ *
+ * Each breakpoint matches a fixed screen width. Values are min-width based
+ * and apply when the screen width is equal or greater.
+ */
+
+@layer tokens {
+  :root {
+    /** Phones — landscape */
+    --breakpoint-xs: 520px;
+
+    /** Tablets — portrait */
+    --breakpoint-sm: 768px;
+
+    /** Tablets — landscape */
+    --breakpoint-md: 1024px;
+
+    /** Laptops */
+    --breakpoint-lg: 1280px;
+
+    /** Desktops */
+    --breakpoint-xl: 1640px;
+  }
+}

@@ -1,0 +1,23 @@
+/**
+ * Ankh Studio - Icon Tokens
+ * Consistent icon sizing across your interface.
+ *
+ * A 4-step scale from small to extra-large. All values respond to
+ * the --scaling custom property for density control.
+ */
+
+@layer tokens {
+  :root {
+    /** Inline icons, dense UI */
+    --icon-size-sm: calc(18px * var(--scaling, 1));
+
+    /** Default icon size */
+    --icon-size-md: calc(24px * var(--scaling, 1));
+
+    /** Prominent icons, empty states */
+    --icon-size-lg: calc(36px * var(--scaling, 1));
+
+    /** Hero icons, illustrations */
+    --icon-size-xl: calc(48px * var(--scaling, 1));
+  }
+}

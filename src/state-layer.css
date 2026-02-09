@@ -1,0 +1,24 @@
+/**
+ * Ankh Studio - State Layer Tokens
+ * Interaction feedback opacity values for surface overlays.
+ *
+ * State layers provide visual feedback by overlaying a color at varying
+ * opacity for hover, focus, pressed, and dragged states. Values follow
+ * the M3 state system.
+ */
+
+@layer tokens {
+  :root {
+    /** Subtle highlight on pointer hover */
+    --state-layer-hover-opacity: 0.08;
+
+    /** Visible ring on keyboard focus */
+    --state-layer-focus-opacity: 0.12;
+
+    /** Active press feedback */
+    --state-layer-pressed-opacity: 0.12;
+
+    /** Strongest overlay during drag */
+    --state-layer-dragged-opacity: 0.16;
+  }
+}

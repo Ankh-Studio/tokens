@@ -1,0 +1,94 @@
+/**
+ * Ankh Studio - Typescale Tokens (M3)
+ * Semantic typography roles for consistent text hierarchy.
+ *
+ * Five roles — Display, Headline, Title, Body, Label — each with large, medium,
+ * and small variants. Composed from the raw scale in typography.css.
+ * @see typography.css
+ */
+
+@layer tokens {
+  :root {
+    /** @group Display — hero text, large numerals */
+    --typescale-display-large-font: var(--font-sans);
+    --typescale-display-large-size: calc(57px * var(--scaling, 1));
+    --typescale-display-large-weight: var(--font-weight-regular);
+    --typescale-display-large-line-height: calc(64px * var(--scaling, 1));
+
+    --typescale-display-medium-font: var(--font-sans);
+    --typescale-display-medium-size: calc(45px * var(--scaling, 1));
+    --typescale-display-medium-weight: var(--font-weight-regular);
+    --typescale-display-medium-line-height: calc(52px * var(--scaling, 1));
+
+    --typescale-display-small-font: var(--font-sans);
+    --typescale-display-small-size: calc(36px * var(--scaling, 1));
+    --typescale-display-small-weight: var(--font-weight-regular);
+    --typescale-display-small-line-height: calc(44px * var(--scaling, 1));
+
+    /** @group Headline — page/section headings */
+    --typescale-headline-large-font: var(--font-sans);
+    --typescale-headline-large-size: calc(32px * var(--scaling, 1));
+    --typescale-headline-large-weight: var(--font-weight-regular);
+    --typescale-headline-large-line-height: calc(40px * var(--scaling, 1));
+
+    --typescale-headline-medium-font: var(--font-sans);
+    --typescale-headline-medium-size: calc(28px * var(--scaling, 1));
+    --typescale-headline-medium-weight: var(--font-weight-regular);
+    --typescale-headline-medium-line-height: calc(36px * var(--scaling, 1));
+
+    --typescale-headline-small-font: var(--font-sans);
+    --typescale-headline-small-size: calc(24px * var(--scaling, 1));
+    --typescale-headline-small-weight: var(--font-weight-regular);
+    --typescale-headline-small-line-height: calc(32px * var(--scaling, 1));
+
+    /** @group Title — component/card headings */
+    --typescale-title-large-font: var(--font-sans);
+    --typescale-title-large-size: calc(22px * var(--scaling, 1));
+    --typescale-title-large-weight: var(--font-weight-regular);
+    --typescale-title-large-line-height: calc(28px * var(--scaling, 1));
+
+    --typescale-title-medium-font: var(--font-sans);
+    --typescale-title-medium-size: calc(16px * var(--scaling, 1));
+    --typescale-title-medium-weight: var(--font-weight-medium);
+    --typescale-title-medium-line-height: calc(24px * var(--scaling, 1));
+
+    --typescale-title-small-font: var(--font-sans);
+    --typescale-title-small-size: calc(14px * var(--scaling, 1));
+    --typescale-title-small-weight: var(--font-weight-medium);
+    --typescale-title-small-line-height: calc(20px * var(--scaling, 1));
+
+    /** @group Body — paragraph/content text */
+    --typescale-body-large-font: var(--font-sans);
+    --typescale-body-large-size: calc(16px * var(--scaling, 1));
+    --typescale-body-large-weight: var(--font-weight-regular);
+    --typescale-body-large-line-height: calc(24px * var(--scaling, 1));
+
+    --typescale-body-medium-font: var(--font-sans);
+    --typescale-body-medium-size: calc(14px * var(--scaling, 1));
+    --typescale-body-medium-weight: var(--font-weight-regular);
+    --typescale-body-medium-line-height: calc(20px * var(--scaling, 1));
+
+    --typescale-body-small-font: var(--font-sans);
+    --typescale-body-small-size: calc(12px * var(--scaling, 1));
+    --typescale-body-small-weight: var(--font-weight-regular);
+    --typescale-body-small-line-height: calc(16px * var(--scaling, 1));
+
+    /** @group Label — buttons, form labels, captions */
+    --typescale-label-large-font: var(--font-sans);
+    --typescale-label-large-size: calc(14px * var(--scaling, 1));
+    --typescale-label-large-weight: var(--font-weight-medium);
+    --typescale-label-large-line-height: calc(20px * var(--scaling, 1));
+    --typescale-label-large-weight-prominent: var(--font-weight-bold);
+
+    --typescale-label-medium-font: var(--font-sans);
+    --typescale-label-medium-size: calc(12px * var(--scaling, 1));
+    --typescale-label-medium-weight: var(--font-weight-medium);
+    --typescale-label-medium-line-height: calc(16px * var(--scaling, 1));
+    --typescale-label-medium-weight-prominent: var(--font-weight-bold);
+
+    --typescale-label-small-font: var(--font-sans);
+    --typescale-label-small-size: calc(11px * var(--scaling, 1));
+    --typescale-label-small-weight: var(--font-weight-medium);
+    --typescale-label-small-line-height: calc(16px * var(--scaling, 1));
+  }
+}

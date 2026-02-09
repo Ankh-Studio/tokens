@@ -1,29 +1,43 @@
 /**
  * Ankh Studio - Shadow Tokens
- * Elevation shadows with automatic light/dark mode
+ * Understanding the shadow styles used in your theme.
+ *
+ * Shadows are derived from a 6-step scale (0–5) representing elevation levels.
+ * Each level uses light-dark() to automatically adapt intensity between modes.
  */
 
 @layer tokens {
   :root {
     color-scheme: light dark;
 
+    /** No elevation */
     --shadow-0: none;
+
+    /** Low — cards, text fields */
     --shadow-1: light-dark(
       0px 1px 2px 0px rgb(0 0 0 / 30%), 0px 1px 3px 1px rgb(0 0 0 / 15%),
       0px 1px 2px 0px rgb(0 0 0 / 50%), 0px 1px 3px 1px rgb(0 0 0 / 25%)
     );
+
+    /** Medium — dropdowns, menus */
     --shadow-2: light-dark(
       0px 1px 2px 0px rgb(0 0 0 / 30%), 0px 2px 6px 2px rgb(0 0 0 / 15%),
       0px 1px 2px 0px rgb(0 0 0 / 50%), 0px 2px 6px 2px rgb(0 0 0 / 25%)
     );
+
+    /** High — navigation, drawers */
     --shadow-3: light-dark(
       0px 1px 3px 0px rgb(0 0 0 / 30%), 0px 4px 8px 3px rgb(0 0 0 / 15%),
       0px 1px 3px 0px rgb(0 0 0 / 50%), 0px 4px 8px 3px rgb(0 0 0 / 25%)
     );
+
+    /** Higher — dialogs, popovers */
     --shadow-4: light-dark(
       0px 2px 3px 0px rgb(0 0 0 / 30%), 0px 6px 10px 4px rgb(0 0 0 / 15%),
       0px 2px 3px 0px rgb(0 0 0 / 50%), 0px 6px 10px 4px rgb(0 0 0 / 25%)
     );
+
+    /** Highest — modals, notifications */
     --shadow-5: light-dark(
       0px 4px 4px 0px rgb(0 0 0 / 30%), 0px 8px 12px 6px rgb(0 0 0 / 15%),
       0px 4px 4px 0px rgb(0 0 0 / 50%), 0px 8px 12px 6px rgb(0 0 0 / 25%)
