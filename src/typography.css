@@ -1,50 +1,117 @@
 /**
  * Ankh Studio - Typography Tokens
- * Typography scale with scaling support
+ * Font families, sizes, weights, line heights, and letter spacing.
+ *
+ * The raw typographic scale provides primitive values aligned to M3 Expressive.
+ * For semantic roles (display, headline, body, label), see typescale.css.
  */
 
 @layer tokens {
   :root {
     /* Font families */
+
+    /** System sans-serif stack */
     --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+    /** Serif stack for editorial/display */
     --font-serif: georgia, 'Times New Roman', serif;
+
+    /** Monospace stack for code/tabular data */
     --font-mono: 'SF Mono', monaco, 'Courier New', monospace;
 
     /* Font sizes (M3 Expressive aligned) */
+
+    /** 11px — label-small */
     --font-size-1: calc(11px * var(--scaling, 1));
+
+    /** 12px — body-small, label-medium */
     --font-size-2: calc(12px * var(--scaling, 1));
+
+    /** 14px — body-medium, label-large, title-small */
     --font-size-3: calc(14px * var(--scaling, 1));
+
+    /** 16px — body-large, title-medium */
     --font-size-4: calc(16px * var(--scaling, 1));
+
+    /** 22px — title-large */
     --font-size-5: calc(22px * var(--scaling, 1));
+
+    /** 24px — headline-small */
     --font-size-6: calc(24px * var(--scaling, 1));
+
+    /** 28px — headline-medium */
     --font-size-7: calc(28px * var(--scaling, 1));
+
+    /** 32px — headline-large */
     --font-size-8: calc(32px * var(--scaling, 1));
+
+    /** 36px — display-small */
     --font-size-9: calc(36px * var(--scaling, 1));
+
+    /** 45px — display-medium */
     --font-size-10: calc(45px * var(--scaling, 1));
+
+    /** 57px — display-large */
     --font-size-11: calc(57px * var(--scaling, 1));
 
     /* Font weights */
+
+    /** Thin emphasis */
     --font-weight-light: 300;
+
+    /** Body text */
     --font-weight-regular: 400;
+
+    /** Labels, titles */
     --font-weight-medium: 500;
+
+    /** Strong emphasis */
     --font-weight-bold: 700;
 
     /* Line heights (M3 Expressive aligned) */
+
+    /** Pairs with font-size-1 (11px) */
     --line-height-1: calc(16px * var(--scaling, 1));
+
+    /** Pairs with font-size-2 (12px) */
     --line-height-2: calc(16px * var(--scaling, 1));
+
+    /** Pairs with font-size-3 (14px) */
     --line-height-3: calc(20px * var(--scaling, 1));
+
+    /** Pairs with font-size-4 (16px) */
     --line-height-4: calc(24px * var(--scaling, 1));
+
+    /** Pairs with font-size-5 (22px) */
     --line-height-5: calc(28px * var(--scaling, 1));
+
+    /** Pairs with font-size-6 (24px) */
     --line-height-6: calc(32px * var(--scaling, 1));
+
+    /** Pairs with font-size-7 (28px) */
     --line-height-7: calc(36px * var(--scaling, 1));
+
+    /** Pairs with font-size-8 (32px) */
     --line-height-8: calc(40px * var(--scaling, 1));
+
+    /** Pairs with font-size-9 (36px) */
     --line-height-9: calc(44px * var(--scaling, 1));
+
+    /** Pairs with font-size-10 (45px) */
     --line-height-10: calc(52px * var(--scaling, 1));
+
+    /** Pairs with font-size-11 (57px) */
     --line-height-11: calc(64px * var(--scaling, 1));
 
     /* Letter spacing */
+
+    /** Slight expansion — small text legibility */
     --letter-spacing-1: 0.0025em;
+
+    /** Neutral — body text */
     --letter-spacing-2: 0em;
+
+    /** Slight compression — large display text */
     --letter-spacing-3: -0.0025em;
   }
 }

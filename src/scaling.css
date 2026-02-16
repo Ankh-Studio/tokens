@@ -1,29 +1,39 @@
 /**
  * Ankh Studio - Scaling Tokens
- * Global scaling factor for responsive sizing (90%-110%)
+ * Global density control for responsive sizing.
+ *
+ * The --scaling custom property is a multiplier applied to all scalable tokens
+ * (space, type, radius, icons). Set via data-scaling attribute with values
+ * from 90% to 110%.
  */
 
 @layer tokens {
   :root {
+    /** Base multiplier applied to all scalable tokens */
     --scaling: 1;
   }
 
+  /** Compact density */
   [data-scaling='90'] {
     --scaling: 0.9;
   }
 
+  /** Slightly compact */
   [data-scaling='95'] {
     --scaling: 0.95;
   }
 
+  /** Default density */
   [data-scaling='100'] {
     --scaling: 1;
   }
 
+  /** Slightly spacious */
   [data-scaling='105'] {
     --scaling: 1.05;
   }
 
+  /** Spacious density */
   [data-scaling='110'] {
     --scaling: 1.1;
   }

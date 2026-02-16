@@ -1,18 +1,38 @@
 /**
  * Ankh Studio - Spacing Tokens
- * Spacing scale using 4px base unit with scaling support
+ * Overview of the space scale and scaling options.
+ *
+ * Spacing values are derived from a 9-step scale based on a 4px unit.
+ * All values respond to the --scaling custom property for density control.
  */
 
 @layer tokens {
   :root {
+    /** Tight — icon padding, inline gaps */
     --space-1: calc(4px * var(--scaling, 1));
+
+    /** Compact — between related elements */
     --space-2: calc(8px * var(--scaling, 1));
+
+    /** Default — standard component padding */
     --space-3: calc(12px * var(--scaling, 1));
+
+    /** Comfortable — card padding, form gaps */
     --space-4: calc(16px * var(--scaling, 1));
+
+    /** Spacious — section gaps */
     --space-5: calc(24px * var(--scaling, 1));
+
+    /** Roomy — between content blocks */
     --space-6: calc(32px * var(--scaling, 1));
+
+    /** Generous — major section spacing */
     --space-7: calc(40px * var(--scaling, 1));
+
+    /** Expansive — page-level spacing */
     --space-8: calc(48px * var(--scaling, 1));
+
+    /** Maximum — hero/feature spacing */
     --space-9: calc(64px * var(--scaling, 1));
   }
 }

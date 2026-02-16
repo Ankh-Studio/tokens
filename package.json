@@ -24,6 +24,7 @@
     "./colors/grayscale.css": "./dist/colors/grayscale.css",
     "./colors/blue.css": "./dist/colors/blue.css",
     "./colors/purple.css": "./dist/colors/purple.css",
+    "./tokens.json": "./dist/tokens.json",
     "./package.json": "./package.json"
   },
   "files": [

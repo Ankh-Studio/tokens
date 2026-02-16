@@ -1,22 +1,31 @@
 /**
- * Ankh Studio - Cursor & Icon Tokens
+ * Ankh Studio - Cursor Tokens
+ * Customizing cursors used for interactive elements.
+ *
+ * A single point of control for interaction affordances across components.
  */
 
 @layer tokens {
   :root {
-    /* Icon sizes */
-    --icon-size-sm: calc(18px * var(--scaling, 1));
-    --icon-size-md: calc(24px * var(--scaling, 1));
-    --icon-size-lg: calc(36px * var(--scaling, 1));
-    --icon-size-xl: calc(48px * var(--scaling, 1));
-
-    /* Cursor styles */
+    /** Standard arrow */
     --cursor-default: default;
+
+    /** Clickable elements */
     --cursor-pointer: pointer;
+
+    /** Disabled elements */
     --cursor-not-allowed: not-allowed;
+
+    /** Text selection */
     --cursor-text: text;
+
+    /** Repositioning */
     --cursor-move: move;
+
+    /** Draggable at rest */
     --cursor-grab: grab;
+
+    /** Actively dragging */
     --cursor-grabbing: grabbing;
   }
 }

@@ -1,6 +1,10 @@
 /**
  * Ankh Studio - Radius Tokens
- * Border radius tokens with scaling support
+ * Choosing the right radius setting for your theme.
+ *
+ * The radius scale ranges from sharp (none) to pill (full). A --radius-factor
+ * custom property is applied via data-radius attributes, letting the entire
+ * scale shift between none, small, medium, and large presets.
  */
 
 @layer tokens {
@@ -9,13 +13,34 @@
     --radius-factor: 1;
 
     /* Border radius scale */
+
+    /** Sharp corners */
     --radius-none: 0;
+
+    /** Subtle rounding — chips, badges */
     --radius-xs: calc(4px * var(--scaling, 1) * var(--radius-factor, 1));
+
+    /** Light rounding — buttons, inputs */
     --radius-sm: calc(8px * var(--scaling, 1) * var(--radius-factor, 1));
+
+    /** Standard rounding — cards, dialogs */
     --radius-md: calc(12px * var(--scaling, 1) * var(--radius-factor, 1));
+
+    /** Heavy rounding — containers */
     --radius-lg: calc(16px * var(--scaling, 1) * var(--radius-factor, 1));
+
+    /** Maximum rounding — FABs, panels */
     --radius-xl: calc(28px * var(--scaling, 1) * var(--radius-factor, 1));
+
+    /** Pill shape */
     --radius-full: 9999px;
+
+    /* Numeric aliases */
+    --radius-1: var(--radius-xs);
+    --radius-2: var(--radius-sm);
+    --radius-3: var(--radius-md);
+    --radius-4: var(--radius-lg);
+    --radius-5: var(--radius-xl);
   }
 
   [data-radius='none'] {

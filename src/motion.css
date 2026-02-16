@@ -1,6 +1,10 @@
 /**
  * Ankh Studio - Motion Tokens (M3 Expressive)
- * Spring physics for JS libraries, easing/duration for CSS
+ * Animation primitives for both CSS transitions and JS spring physics.
+ *
+ * Spring tokens (damping, stiffness) are designed for JS libraries like
+ * Framer Motion or React Spring. Duration and easing tokens are for CSS
+ * transitions. Convenience aliases map to common interaction speeds.
  */
 
 @layer tokens {
@@ -11,18 +15,30 @@
      * ============================================== */
 
     /* Spatial springs - position, scale, rotation (allows overshoot) */
+
+    /** Fast spatial — snappy repositions */
     --spring-fast-spatial-damping: 0.9;
     --spring-fast-spatial-stiffness: 1400;
+
+    /** Default spatial — standard movement */
     --spring-default-spatial-damping: 0.9;
     --spring-default-spatial-stiffness: 700;
+
+    /** Slow spatial — gentle entrances */
     --spring-slow-spatial-damping: 0.9;
     --spring-slow-spatial-stiffness: 300;
 
     /* Effects springs - color, opacity (no overshoot) */
+
+    /** Fast effects — instant color/opacity */
     --spring-fast-effects-damping: 1;
     --spring-fast-effects-stiffness: 3800;
+
+    /** Default effects — standard fades */
     --spring-default-effects-damping: 1;
     --spring-default-effects-stiffness: 1600;
+
+    /** Slow effects — gradual reveals */
     --spring-slow-effects-damping: 1;
     --spring-slow-effects-stiffness: 800;
 
@@ -30,38 +46,112 @@
      * Duration Tokens (for CSS transitions)
      * ============================================== */
 
+    /** No animation */
     --duration-instant: 0ms;
+
+    /** 50ms */
     --duration-short1: 50ms;
+
+    /** 100ms */
     --duration-short2: 100ms;
+
+    /** 150ms */
     --duration-short3: 150ms;
+
+    /** 200ms */
     --duration-short4: 200ms;
+
+    /** 250ms */
     --duration-medium1: 250ms;
+
+    /** 300ms */
     --duration-medium2: 300ms;
+
+    /** 350ms */
     --duration-medium3: 350ms;
+
+    /** 400ms */
     --duration-medium4: 400ms;
+
+    /** 450ms */
     --duration-long1: 450ms;
+
+    /** 500ms */
     --duration-long2: 500ms;
+
+    /** 550ms */
     --duration-long3: 550ms;
+
+    /** 600ms */
     --duration-long4: 600ms;
+
+    /** 700ms */
     --duration-extra-long1: 700ms;
+
+    /** 800ms */
     --duration-extra-long2: 800ms;
+
+    /** 900ms */
     --duration-extra-long3: 900ms;
+
+    /** 1000ms */
     --duration-extra-long4: 1000ms;
+
+    /* Duration aliases */
+
+    /** 100ms — micro-interactions, state changes */
+    --duration-fast: var(--duration-short2);
+
+    /** 200ms — standard transitions */
+    --duration-normal: var(--duration-short4);
+
+    /** 300ms — complex animations */
+    --duration-slow: var(--duration-medium2);
+
+    /** 400ms — page transitions, reveals */
+    --duration-slower: var(--duration-medium4);
 
     /* ==============================================
      * Easing Tokens (for CSS transitions)
      * ============================================== */
 
+    /** Constant velocity, no acceleration */
     --easing-linear: linear;
 
     /* Standard - utility/functional animations */
+
+    /** General-purpose M3 easing */
     --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+
+    /** Elements leaving view */
     --easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+
+    /** Elements entering view */
     --easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
 
     /* Emphasized - expressive M3 animations */
+
+    /** Expressive general-purpose easing */
     --easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+
+    /** Dramatic exit */
     --easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+
+    /** Dramatic entrance */
     --easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+
+    /* Easing aliases */
+
+    /** CSS ease keyword */
+    --easing-ease: ease;
+
+    /** Accelerate from rest */
+    --easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+    /** Decelerate to rest */
+    --easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+    /** Smooth start and end */
+    --easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

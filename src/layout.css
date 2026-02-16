@@ -1,13 +1,23 @@
 /**
  * Ankh Studio - Layout Tokens
+ * Container max-widths for content measure constraints.
+ *
+ * A 4-step scale of max-widths for constraining content width
+ * across device classes.
  */
 
 @layer tokens {
   :root {
-    /* Container max-widths */
+    /** Phones — portrait */
     --container-1: 448px;
+
+    /** Tablets — portrait */
     --container-2: 688px;
+
+    /** Desktops — standard */
     --container-3: 880px;
+
+    /** Desktops — wide */
     --container-4: 1136px;
   }
 }
